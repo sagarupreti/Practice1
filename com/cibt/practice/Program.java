@@ -29,6 +29,15 @@ public class Program{
         }
         return end + sumRecursive(--end);
     }
+    public static int multiply(int end) {
+        int total=1;
+        for(int i=1;i<=end; i++){
+            total=i*total;
+        }
+        return total;
+
+
+    }
     public static void main(String[] args){
         print(5);
         System.out.println("----------------------------");
@@ -37,5 +46,7 @@ public class Program{
         System.out.println(sum(5));
         System.out.println("----------------------------");
         System.out.println(sumRecursive(6));
+        System.out.println(multiply(5));
     }
+   
 }
